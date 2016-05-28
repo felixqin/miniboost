@@ -11,13 +11,14 @@ if [ ! -f dist/bin/bcp ]; then
 	./b2 tools/bcp
 fi
 
-rmdir out -fr
+rm out -fr
 mkdir -p out
 dist/bin/bcp	\
 	make_shared.hpp	\
 	boost/enable_shared_from_this.hpp	\
 	bind.hpp	\
 	asio.hpp	\
+	thread.hpp	\
 	out
 
 
