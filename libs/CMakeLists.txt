@@ -1,0 +1,11 @@
+set(TOPDIR ../../)
+AUX_SOURCE_DIRECTORY(chrono/src DIR_SRCS)
+AUX_SOURCE_DIRECTORY(date_time/src/gregorian DIR_SRCS)
+AUX_SOURCE_DIRECTORY(date_time/src/posix_time DIR_SRCS)
+AUX_SOURCE_DIRECTORY(regex/src DIR_SRCS)
+AUX_SOURCE_DIRECTORY(smart_ptr/src DIR_SRCS)
+AUX_SOURCE_DIRECTORY(system/src DIR_SRCS)
+ADD_LIBRARY(miniboost ${DIR_SRCS})  
+INCLUDE_DIRECTORIES(
+    ../
+)
