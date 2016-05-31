@@ -19,6 +19,7 @@ dist/bin/bcp	\
 	bind.hpp	\
 	asio.hpp	\
 	thread.hpp	\
+	unordered_map	\
 	out
 
 
