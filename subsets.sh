@@ -20,6 +20,7 @@ dist/bin/bcp	\
 	asio.hpp	\
 	thread.hpp	\
 	unordered_map	\
+	unordered_set	\
 	out
 
 
