@@ -1,4 +1,3 @@
-set(TOPDIR ../../)
 
 add_definitions(-DBOOST_THREAD_BUILD_LIB)
 
@@ -18,7 +17,8 @@ ELSE (WIN32)
     AUX_SOURCE_DIRECTORY(thread/src/pthread DIR_SRCS)
 ENDIF (WIN32)
 
-ADD_LIBRARY(miniboost ${DIR_SRCS})  
+file(GLOB_RECURSE HEADERFILES "../boost/*")
+ADD_LIBRARY(miniboost ${DIR_SRCS} ${HEADERFILES})
 
 INCLUDE_DIRECTORIES(
     ../
