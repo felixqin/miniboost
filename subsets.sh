@@ -27,7 +27,9 @@ dist/bin/bcp	\
 	boost/uuid/uuid_io.hpp	\
 	boost/uuid/uuid_generators.hpp	\
 	boost/algorithm/string.hpp	\
+	boost/beast/core.hpp    \
 	boost/beast/http.hpp    \
+	boost/beast/version.hpp \
 	out
 
 
