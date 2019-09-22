@@ -1,7 +1,7 @@
 
 THISDIR=`dirname $0`
 
-BOOSTDIR=boost_1_66_0
+BOOSTDIR=boost_1_71_0
 
 cd ${THISDIR}
 cd ${BOOSTDIR}
