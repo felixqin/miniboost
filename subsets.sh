@@ -30,6 +30,7 @@ dist/bin/bcp	\
 	boost/beast/core.hpp    \
 	boost/beast/http.hpp    \
 	boost/beast/version.hpp \
+	boost/date_time.hpp	\
 	out
 
 
