@@ -20,6 +20,7 @@ dist/bin/bcp	\
 	boost/enable_shared_from_this.hpp	\
 	bind.hpp	\
 	asio.hpp	\
+	asio/ssl.hpp	\
 	thread.hpp	\
 	boost/thread/executors/scheduler.hpp	\
 	unordered_map	\
