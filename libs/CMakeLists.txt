@@ -14,7 +14,7 @@ AUX_SOURCE_DIRECTORY(thread/src DIR_SRCS)
 IF (CMAKE_SYSTEM_NAME MATCHES "Windows")
     AUX_SOURCE_DIRECTORY(thread/src/win32 DIR_SRCS)
 ELSE ()
-    AUX_SOURCE_DIRECTORY(thread/src/pthread DIR_SRCS)
+    set(DIR_SRCS ${DIR_SRCS} thread/src/pthread/once.cpp thread/src/pthread/thread.cpp)
 ENDIF ()
 
 file(GLOB_RECURSE HEADERFILES "../boost/*")
